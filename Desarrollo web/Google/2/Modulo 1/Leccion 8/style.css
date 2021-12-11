@@ -1,0 +1,27 @@
+li > p {
+    color: blue;
+}
+
+h2 + p {
+    color: green;
+}
+
+#first h1:first-child{
+    color: red;
+}
+
+p[title="atributo"]{
+    color: yellow;
+}
+
+p[class|="perro"]{
+    color: pink;
+}
+
+p[id~="blanco"]{
+    color: blue;
+}
+
+:lang(en){
+    color: red;
+}

@@ -1,0 +1,36 @@
+body{
+    color: #000000;
+}
+
+a, a:link, a:visited, a:active, a:hover{
+    color: #81c0c5;
+}
+
+header{
+    background-color: #F47E7D;
+}
+
+nav{
+    background-color: #B5D045;
+}
+
+section{
+    background-color: #E0C7A8;
+}
+
+footer{
+    background-color: #FB8335;
+}
+
+.display-great, .display-medium, .display-mini{
+    display: none;
+}
+
+.menu{
+    padding-left: 0;
+}
+
+.menu li{
+    display: inline;
+    list-style-type: none;
+}

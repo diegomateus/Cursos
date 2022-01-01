@@ -1,0 +1,15 @@
+span{
+    background-color: coral;
+    margin: 10px;
+    
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color: aquamarine;
+    
+}
+
+p{
+    border: 1px solid;
+}

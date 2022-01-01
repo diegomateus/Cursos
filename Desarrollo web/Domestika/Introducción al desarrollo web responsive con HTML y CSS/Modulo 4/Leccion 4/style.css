@@ -1,0 +1,19 @@
+.div1{
+    height: 80px;
+    background-color: burlywood;
+    border: 2px solid;
+    overflow: scroll;
+}
+
+.div2{
+    background-color: blueviolet;
+    border: 2px solid;
+    overflow: auto;
+}
+
+.p2{
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 50%;
+}

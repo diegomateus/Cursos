@@ -1,0 +1,19 @@
+div{
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.span1{
+    background-color: orange;
+    padding: 10px;
+    display: inline;
+}
+
+.span2{
+    background-color: rgb(255, 102, 0);
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+}

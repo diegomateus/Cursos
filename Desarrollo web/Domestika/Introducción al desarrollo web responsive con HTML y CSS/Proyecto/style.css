@@ -1,0 +1,101 @@
+body{
+    box-sizing: content-box;
+}
+
+article{
+    text-align: center;
+    padding: 50px;
+}
+
+.fisrt-article{
+    background-color: #D03B40;
+    color: #F5F0ED;
+}
+
+.second-article{
+    background-color: #ded6c0;
+    color: #D03B40;
+}
+
+header{
+    color: #F5F0ED;
+    padding: 15px;
+    position: relative;
+    background: url("./Images/Fondo1.jpg")
+                no-repeat center top / cover;
+}
+
+header .line{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 100px;
+    border: solid 2px #F5F0ED;
+}
+
+header p{
+    margin-bottom: 100px;
+}
+
+h1{
+    margin: 60px 50px 60px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0px 20px 50px 20px;
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h1, h2, h3, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu-mobile{
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #D03B40;
+    width: 50px;
+    height: 50px;
+    padding: 10px 7px 15px 7px;
+}
+
+.menu-mobile div{
+    border-radius: 10px;
+    border: solid 3px #F5F0ED;
+    margin-bottom: 5px;
+}
+
+/*  COLORES
+
+Rojo: #d03b40
+Beige: #ded6c0
+Blanco: #f5f0ed
+Gris: #241d1b
+
+Texto claro: #f5f0ed
+Texto oscuro: #3c3c3b
+
+TAMAÑOS
+
+Encabezado 1r nivel: 44px
+Encabezado 2º nivel: 28px
+Encabezado 3r nivel: 24px
+Cuerpo de texto: 16px
+Botones: 14px
+*/

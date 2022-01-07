@@ -1,0 +1,15 @@
+div{
+    float: left;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.div1{
+
+    width: 60%;
+}
+
+.div2{
+    position: relative;
+    width: 40%;
+}

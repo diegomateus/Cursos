@@ -1,0 +1,25 @@
+div{
+    float: left;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.div1{
+
+    width: 60%;
+}
+
+.div2{
+    position: relative;
+    width: 40%;
+}
+
+@media screen and (max-width: 800px) {
+    div{
+        float: none;
+    }
+
+    .div1, .div2{
+        width: 100%;
+    }
+}

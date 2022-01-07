@@ -1,0 +1,74 @@
+body{
+    position: static;
+    margin: 50px;
+    box-sizing: border-box;
+    background-color: coral;
+}
+
+a.menu-button{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+}
+
+header{
+    display: none;
+}
+
+ol{
+    list-style-type: none;
+    padding: 0; 
+}
+
+li{
+    border-bottom: solid black 1px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: yellow;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 800px){
+    a.menu-button{
+        display: none;
+    }
+
+    header{
+        display: block;
+    }
+
+    li{
+        display: inline;
+        border: none;
+    }
+
+    #navegacion{
+        display: none;
+    }
+
+    .encabezado{
+        width: 100%;
+        overflow: auto;
+    }
+
+    div div{
+        float: left;
+        width: 60%;
+    }
+
+    img{
+        float: left;
+    }
+}

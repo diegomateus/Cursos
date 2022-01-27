@@ -11,6 +11,10 @@ header{
     position: relative;
 }
 
+ul{
+    display: none;
+}
+
 .menu-mobile{
     background-color: #D03B40;
     border-radius: 50%;
@@ -82,13 +86,11 @@ article h2{
 .fisrt-article{
     background-color: #D03B40;
     color: #F5F0ED;
-    height: 50%;
 }
 
 .second-article{
     background-color: #DED6C0;
     color: #D03B40;
-    height: 50%;
 }
 
 .third-article{
@@ -175,21 +177,84 @@ strong{
 .last-footer p{
     text-align: left;
 }
-/*  COLORES
 
-Rojo: #d03b40
-Beige: #ded6c0
-Blanco: #f5f0ed
-Gris: #241d1b
+@media screen and (min-width: 769px) {
 
-Texto claro: #f5f0ed
-Texto oscuro: #3c3c3b
+    .menu-mobile{
+        display: none;
+    }
 
-TAMAÑOS
+    ul{
+        display: block;
+        float: right;
+    }
 
-Encabezado 1r nivel: 44px
-Encabezado 2º nivel: 28px
-Encabezado 3r nivel: 24px
-Cuerpo de texto: 16px
-Botones: 14px
-*/
+    li{
+        float: left;
+        padding: 10px 10px 0px 0px;
+        margin-top: 10px;
+    }
+
+    li a{
+        color: #DED6C0;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s color;
+    }
+
+    a:hover{
+        color: #D03B40;
+    }
+
+    .container{
+        overflow: hidden;
+    }
+
+    .fisrt-article, .second-article, .first-footer, .second-footer{
+        box-sizing: border-box;
+        height: 300px;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+    }
+
+    section{
+        overflow: hidden;
+        margin: 50px 0px 50px 0px;
+    }
+
+    .content{
+        box-sizing: border-box;
+        float: left;
+        height: 250px;
+        width: 50%;
+    }
+
+    .content img{
+        float: left;
+        height: 130px;
+        margin: 50px 0px 50px 0px;
+        width: 130px;
+    }
+
+    .content h3, .content p{
+        padding-left: 10px;
+        float: left;
+        width: 60%;
+    }
+
+    .last-content{
+        margin-bottom: 0px;
+    }
+
+
+}

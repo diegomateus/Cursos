@@ -1,0 +1,31 @@
+div{
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin: 50px auto 50px auto;
+}
+
+.border1{
+    background-color: red;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.border2{
+    background-color: green;
+    box-shadow: 50px 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.border3{
+    background-color: blue;
+    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.border4{
+    background-color: brown;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.border5{
+    background-color: chocolate;
+    box-shadow: 0 10px 0 rgba(1,1,0, 1);
+}

@@ -1,0 +1,30 @@
+div{
+    width: 500px;
+    height: 200px;
+}
+
+.div1{
+    background: 
+        linear-gradient(90deg, blue 25%, black 50%, white);
+}
+
+.div2{
+    background: 
+    linear-gradient(45deg, red 25%, green 50%, white);
+    background-size: 50px;
+}
+
+.div3{
+    background: 
+        black repeating-linear-gradient(45deg, white 30px, red 60px);
+}
+
+.div4{
+    background: 
+        radial-gradient(circle, black, white);
+}
+
+.div5{
+    background: 
+        radial-gradient(circle at -5px -5px, black, white);
+}

@@ -1,0 +1,21 @@
+button{
+    display: block;
+    height: 50px;
+    margin: 0px auto 30px auto;
+    width: 100px;
+}
+
+.b1{
+    border-radius: 50%;
+    box-shadow: 5px 5px rgba(1, 1, 255, 0.144);
+}
+
+.b2{
+    background: 
+        linear-gradient(90deg, green, red);
+}
+
+.b3{
+    background: 
+        radial-gradient(circle, yellow 50%, blue 50%);
+}

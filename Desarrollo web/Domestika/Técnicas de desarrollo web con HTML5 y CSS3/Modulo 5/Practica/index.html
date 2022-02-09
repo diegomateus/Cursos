@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+        <title>Video, audio e imágenes responsive</title>
+    </head>
+    <body>
+        <h1>Video</h1>
+        <video controls src="./Videos/elmo.webm"
+            poster="./Imágenes/devil_elmo.jpg" muted></video>
+        <h2>Imagen responsive</h2>
+        <img src="./Imágenes/devil_elmo.jpg" 
+            srcset="./Imágenes/god_level.jpg 1000w, 
+                    ./Imágenes/goku.jpg 1200w"
+            sizes="(min-width: 600px) 50vw"
+            alt="">
+    </body>
+</html>

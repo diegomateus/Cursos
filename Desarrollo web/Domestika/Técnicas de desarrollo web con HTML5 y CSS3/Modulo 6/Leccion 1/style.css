@@ -1,0 +1,27 @@
+li:first-child{
+    background-color: aqua;
+}
+
+li:last-child{
+    background-color: blue;
+}
+
+li:nth-child(5){
+    background-color: red;
+}
+
+li:nth-child(odd){
+    background-color: aquamarine;
+}
+
+li:nth-child(2n + 3){
+    background-color: blueviolet;
+}
+
+div span:first-of-type{
+    background-color: chartreuse;
+}
+
+div :first-of-type{
+    background-color: crimson;
+}

@@ -1,0 +1,55 @@
+body{
+	font-family: sans-serif;
+	padding-left: 2em;
+}
+
+h2{
+	margin-top: 2em;
+}
+
+li{
+	margin-top: .5em;
+}
+
+a{
+	color: deepskyblue;
+}
+
+table{
+	border-collapse: collapse;
+	margin-bottom: 4em;
+}
+
+td{
+	padding: .5em 1em;
+	border: 1px solid whitesmoke;
+}
+
+div h2:nth-of-type(2){
+	font-size: 50px;
+}
+
+table tr td:nth-of-type(3){
+	background-color: grey;
+}
+
+ul li ul li:nth-child(2){
+	color: red;
+}
+
+ul li ul li ul li:last-of-type{
+	color: black;
+}
+
+
+table tr:nth-child(odd){
+	background-color: grey;
+}
+
+a[href$=".pdf"]{
+	color: green;
+}
+
+a[href*="comogusteis"]{
+	color: orange;
+}

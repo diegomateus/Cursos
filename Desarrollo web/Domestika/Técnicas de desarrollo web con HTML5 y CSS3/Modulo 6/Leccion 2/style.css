@@ -1,0 +1,23 @@
+a{
+    display: block;
+}
+
+a[title]{
+    background-color: aqua;
+}
+
+a[href="https://caniuse.com/"]{
+    background-color: blue;
+}
+
+a[href^="https://www"]{
+    background-color: brown;
+}
+
+a[href$="premium"]{
+    background-color: chartreuse;
+}
+
+a[href*="book"]{
+    background-color: crimson;
+}

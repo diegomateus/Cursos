@@ -1,0 +1,20 @@
+::placeholder{
+    color:hotpink
+}
+
+input:required{
+    border-left: 5px solid red;
+}
+
+input:optional{
+    border: 2px dashed;
+}
+
+input:invalid{
+    background-color: pink;
+}
+
+input[type=checkbox]:checked + label{
+    color: green;
+    font-weight: bold;
+}

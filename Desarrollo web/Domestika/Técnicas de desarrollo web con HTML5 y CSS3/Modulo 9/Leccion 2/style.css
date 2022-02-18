@@ -1,0 +1,17 @@
+div{
+    background-color: grey;
+    display: block;
+    float: left;
+    height: 100px;
+    box-sizing: border-box;
+    border: solid 5px black;
+}
+
+.columna1{
+    margin-right: 20px;
+    width: calc(50% - 10px);
+}
+
+.columna2{
+    width: calc(50% - 10px);
+}

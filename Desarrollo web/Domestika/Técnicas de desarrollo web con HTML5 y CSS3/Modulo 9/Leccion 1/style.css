@@ -1,0 +1,14 @@
+div{
+    background: url(./Imagenes/batman.jpeg) no-repeat center center;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2),
+        screen and (min-resolution: 192dpi) {
+            div{
+                background-image: url(./Imagenes/joker.jpg);
+            }
+}

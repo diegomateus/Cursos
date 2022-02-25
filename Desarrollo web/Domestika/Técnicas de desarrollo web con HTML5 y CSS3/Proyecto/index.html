@@ -2,12 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./style.css">
         <title>Moramia</title>
     </head>
     <body>
-        <header>
+        <header id="header">
             <img class="logo" src="./Images/logo-small.png" alt="Logo de Moramia">
             <div class="menu">
                 <span></span>
@@ -51,10 +52,10 @@
         </main>
         <aside>
             <p>Subscribe for a <strong>25% Discount</strong></p>
-            <p>Nulla ac convallis lorem, eget euismod nisi. Donec in libero sit amet
+            <small>Nulla ac convallis lorem, eget euismod nisi. Donec in libero sit amet
                 mi vulputate consecteur. Donec auctor interdum purus, ac finibus massa
                 bibendum nec.
-            </p>
+            </small>
             <form>
                 <input placeholder="Your E-mail" required="required" type="email" name="email">
                 <button>Subscribe</button>
@@ -63,8 +64,25 @@
         <footer>
             <img src="./Images/logo2.png" alt="Segundo logo de Moramia">
             <p>Copyright ©2022 All rights reserved | This template is made
-                with love.
+                with love by Colorib & Re-distributed by Themewagon.
             </p>
+            <a href="#footer-menu" class="footer-button-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <nav id="footer-menu" class="footer-nav">
+                <ol>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">CHECKOUT</a></li>
+                </ol>
+            </nav>
         </footer>
+        <div class="footer-button-begin">
+            <a href="#header">^</a>
+        </div>
     </body>
 </html>

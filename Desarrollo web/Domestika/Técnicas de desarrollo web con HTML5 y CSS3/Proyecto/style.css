@@ -11,6 +11,10 @@
  
 }
 
+body{
+    position: relative;
+}
+
 header{
     align-items: center;
     background-color: #FFF;
@@ -115,4 +119,87 @@ form button{
 
 form button:hover{
     cursor: pointer;
+}
+
+footer{
+    color: rgba(225, 255, 255, 0.4);
+    background-color: #252525;
+    padding: 10px 10px 50px 10px;
+    line-height: 1.4;
+}
+
+footer img{
+    margin-top: 50px;
+}
+
+.footer-button-menu{
+    align-items: center;
+    background-color: #0DC6F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25px;
+    margin-top: 15px;
+    width: 30px;
+}
+
+.footer-button-menu div{
+    background-color: #FFF;
+    border-radius: 3px;
+    height: 3px;
+    margin: 1px 0px 1px 0px;
+    width: 15px;
+}
+
+.footer-button-menu:hover{
+    cursor: pointer;
+}
+
+.footer-nav{
+    margin-top: 20px;
+}
+
+#footer-menu{
+    display: none;
+}
+
+#footer-menu:target{
+    display: block;
+}
+
+.footer-nav li{
+    margin: 5px 0px 5px 0px;
+}
+
+.footer-nav li a{
+    color: #F1ECEC;
+    text-decoration: none;
+    transition: color 0.5s linear;
+}
+
+.footer-nav li a:hover{
+    color: #0DC6F2;
+}
+
+.footer-button-begin{
+    align-items: center;
+    background-color: #0DC6F2;
+    display: flex;
+    right: 30px;
+    bottom: 30px;
+    height: 35px;
+    position: fixed;
+    width: 35px;
+    justify-content: center; 
+} 
+
+.footer-button-begin a{
+    color: #F1ECEC;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    *{
+        display: none;
+    }
 }

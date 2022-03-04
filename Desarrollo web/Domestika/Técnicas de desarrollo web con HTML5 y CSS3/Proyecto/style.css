@@ -8,14 +8,13 @@
     padding: 0;
     margin: 0;
     font-family: 'helveticaneuemedium';
- 
 }
 
 body{
     position: relative;
 }
 
-header{
+.header-mobile{
     align-items: center;
     background-color: #FFF;
     display: flex;
@@ -44,6 +43,60 @@ header{
     height: 3px;
     margin: 2px 0px 2px 0px;
     width: 28px;
+}
+
+#header{
+    box-sizing: border-box;
+    background-color: #FFF;
+    padding: 60px 75px 60px 75px;
+    position: fixed;
+    height: 100%;
+    left: -320px;
+    top: 0px;
+    max-width: 320px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+#header:target{
+    transform: translateX(320px);
+    transition: all 0.5s linear;
+}
+
+.header img{
+    height: auto;
+    margin-bottom: 100px;
+    max-width: 100%;
+}
+
+.moramia-nav li{
+    padding: 20px 0px 20px 0px;
+}
+
+.moramia-nav a{
+    color: #252525;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.moramia-nav a::before{
+    content: '';
+    background-color: #0DC6F2;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    transition: all 0.3s linear;
+    margin-top: 5px;
+    left: -30px;
+}
+
+.moramia-nav a:hover{
+    color: #0DC6F2;
+    transition: color 1s linear;
+}
+
+.moramia-nav a:hover::before{
+    transform: translateX(30px);
 }
 
 article{
@@ -87,7 +140,7 @@ aside{
     padding: 70px 10px 70px 10px;
 }
 
-aside p{
+aside p, aside small{
     color: #b3b1b1;
     line-height: 1.9;
 }
@@ -161,6 +214,7 @@ footer img{
 
 #footer-menu{
     display: none;
+    transition: display 1s linear;
 }
 
 #footer-menu:target{
@@ -198,8 +252,89 @@ footer img{
     text-decoration: none;
 }
 
+@media screen and (min-width: 576px) {
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article{
+        flex-basis: 50%;
+    }
+
+
+}
+
 @media screen and (min-width: 768px) {
-    *{
+
+    .header-mobile{
         display: none;
     }
+
+    .principal{
+        overflow: auto;
+    }
+
+    #header{
+        float: left;
+        position: static;
+        max-width: 280px;
+        padding: 50px;
+    }
+
+    main{
+        display: block;
+        float: right;
+        width: calc(100% - 280px);
+    }
+}
+
+@media screen and (min-width: 991px) {
+    #header{
+        max-width: 320px;
+        padding: 60px 75px 60px 75px;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 320px);
+    }
+
+    article{
+        flex-basis: 50%;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-button-menu{
+        display: none;
+        flex-wrap: wrap;
+    }
+
+    .footer-information, .footer-nav{
+        flex-basis: 50%;
+        margin: auto 50px auto 20px
+    }
+
+    #footer-menu{
+        display: block;
+    }
+
+    #footer-menu ol{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+
+    article{
+        flex-basis: 33.3%;
+    }
+    
 }

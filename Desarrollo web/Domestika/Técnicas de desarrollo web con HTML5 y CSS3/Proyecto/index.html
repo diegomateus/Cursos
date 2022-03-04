@@ -8,48 +8,62 @@
         <title>Moramia</title>
     </head>
     <body>
-        <header id="header">
+        <header id="header-mobile" class="header-mobile">
             <img class="logo" src="./Images/logo-small.png" alt="Logo de Moramia">
-            <div class="menu">
+            <a class="menu" href="#header">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </a>
         </header>
-        <main>
-            <article>
-                <div class="product-description">
-                    <div></div>
-                    <p class="product-price">From $180</p>
-                    <p class="product-name">Frutos secos</p>
-                </div>
-                <img src="./Images/product1.jpg" alt="Primer producto">
-            </article>
-            <article>
-                <div class="product-description">
-                    <div></div>
-                    <p class="product-price">From $180</p>
-                    <p class="product-name">Frutos secos</p>
-                </div>
-                <img src="./Images/product2.jpg" alt="Segundo producto">
-            </article>
-            <article>
-                <div class="product-description">
-                    <div></div>
-                    <p class="product-price">From $180</p>
-                    <p class="product-name">Frutos secos</p>
-                </div>
-                <img src="./Images/product3.jpg" alt="Tercer producto">
-            </article>
-            <article>
-                <div class="product-description">
-                    <div></div>
-                    <p class="product-price">From $180</p>
-                    <p class="product-name">Frutos secos</p>
-                </div>
-                <img src="./Images/product4.jpg" alt="Cuarto producto">
-            </article>
-        </main>
+        <div class="principal">
+            <header id="header" class="header">
+                <img src="./Images/logo.png" alt="Moramia logo">
+                <nav class="moramia-nav">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">CART</a></li>
+                        <li><a href="#">CHECKOUT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <div class="product-description">
+                        <div></div>
+                        <p class="product-price">From $180</p>
+                        <p class="product-name">Frutos secos</p>
+                    </div>
+                    <img src="./Images/product1.jpg" alt="Primer producto">
+                </article>
+                <article>
+                    <div class="product-description">
+                        <div></div>
+                        <p class="product-price">From $180</p>
+                        <p class="product-name">Frutos secos</p>
+                    </div>
+                    <img src="./Images/product2.jpg" alt="Segundo producto">
+                </article>
+                <article>
+                    <div class="product-description">
+                        <div></div>
+                        <p class="product-price">From $180</p>
+                        <p class="product-name">Frutos secos</p>
+                    </div>
+                    <img src="./Images/product3.jpg" alt="Tercer producto">
+                </article>
+                <article>
+                    <div class="product-description">
+                        <div></div>
+                        <p class="product-price">From $180</p>
+                        <p class="product-name">Frutos secos</p>
+                    </div>
+                    <img src="./Images/product4.jpg" alt="Cuarto producto">
+                </article>
+            </main>
+        </div>
         <aside>
             <p>Subscribe for a <strong>25% Discount</strong></p>
             <small>Nulla ac convallis lorem, eget euismod nisi. Donec in libero sit amet
@@ -62,10 +76,13 @@
             </form>
         </aside>
         <footer>
-            <img src="./Images/logo2.png" alt="Segundo logo de Moramia">
-            <p>Copyright ©2022 All rights reserved | This template is made
-                with love by Colorib & Re-distributed by Themewagon.
-            </p>
+            <div class="footer-information">
+                <img src="./Images/logo2.png" alt="Segundo logo de Moramia">
+                <p>Copyright ©2022 All rights reserved | This template is made
+                    with love by Colorib & Re-distributed by Themewagon.
+                </p>
+            </div>
+            
             <a href="#footer-menu" class="footer-button-menu">
                 <div></div>
                 <div></div>
@@ -82,7 +99,7 @@
             </nav>
         </footer>
         <div class="footer-button-begin">
-            <a href="#header">^</a>
+            <a href="#header-mobile">^</a>
         </div>
     </body>
 </html>

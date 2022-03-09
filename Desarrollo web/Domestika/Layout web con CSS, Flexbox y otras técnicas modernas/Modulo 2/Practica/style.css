@@ -1,0 +1,78 @@
+:root{
+    --poligono: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+
+.content-img{
+    background: linear-gradient(90deg, red 33%, blue);
+    color: brown;
+    display: flex;
+    position: relative;
+}
+
+.content-rie, .content-batman{
+    height: 100vh;
+    width: 50%;
+}
+
+.content-rie img, .content-batman img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.content-rie img{
+    object-position: center top;
+}
+
+img {
+    display: block;
+    opacity: 0.6;
+    filter: grayscale(100%);
+  }
+
+.title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 3em;
+}
+
+.title h1{
+    color: white;
+    font-size: 30px;
+}
+
+.p-column{
+    column-count: 2;
+    column-gap: 2em;
+    column-rule: 2px solid rgba(0, 0, 0, 0.089);
+}
+
+p, h2{
+    margin: 30px 15vw 30px 15vw;
+    text-align: justify;
+}
+
+.batifamilia{
+    float: right;
+    clip-path: var(--poligono);
+    shape-outside: var(--poligono) border-box;
+    margin: 20px;
+    shape-margin: 1em;
+}
+
+.batifamilia img{
+    object-fit: cover;
+    width: 15em;
+    height: 15em;
+    opacity: 1;
+    filter: grayscale(0%);
+}

@@ -1,0 +1,21 @@
+:root{
+    --color: #00ACAC;
+}
+
+.cabecera {
+    background: var(--color);
+  }
+  
+  .articulo__entradilla {
+    color: var(--color);
+  }
+  
+  .articulo__cuerpo > p:first-child::first-letter {
+    color: var(--color);
+  }
+  
+  .imagen-circulo,
+  .imagen-hexagono {
+    background: var(--color);
+  }
+  

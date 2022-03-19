@@ -1,0 +1,13 @@
+.contenedor div{
+    background-color: darkcyan;
+    text-align: center;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 30px 10px 30px 10px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-gap: 10px;
+}

@@ -1,0 +1,64 @@
+:root{
+    --columnas: 2em 3em auto 3em 2em;
+}
+
+body{
+    display: grid;
+    grid-template-columns: var(--columnas);
+    grid-template-rows: 100vh 1fr auto ;
+}
+
+.image-container{
+    display: relative;
+    grid-column: 1 / -1;
+}
+
+.batman-image-container, .batman-who-image-container{
+    float: left;
+    width: 50%;
+}
+
+.batman-image-container img, .batman-who-image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.image-container > h1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 3em;
+    font-size: 4em;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: var(--columnas);
+    grid-column: 1 / -1;
+}
+
+.content p:first-child{
+    grid-column: 2 / -2;
+    column-count: 2;
+}
+
+.content p{
+    grid-column: 3 / -3;
+}
+
+p{
+    margin: 10px;
+    text-align: justify;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}

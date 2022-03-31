@@ -1,0 +1,15 @@
+.contenedor{
+    display: grid;
+    grid-template: repeat(6,100px) / repeat(4,100px);
+    justify-content: space-evenly;
+    align-items: stretch;
+
+}
+
+.contenedor div{
+    background-color: darkcyan;
+    text-align: center;
+    margin: 2px;
+    border-radius: 10px;
+    padding: 30px 10px 30px 10px;
+}

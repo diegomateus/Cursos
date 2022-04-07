@@ -1,0 +1,119 @@
+:root{
+    --poligono: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    --opacidad-nav: 0;
+    --titular-pos: 0;
+    --img1-pos: 10vw;
+    --img2-pos: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.navegacion{
+    background: linear-gradient(90deg, red 33%, blue);
+    padding: 10px 0px 10px 0px;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: var(--opacidad-nav);
+}
+
+.navegacion > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navegacion > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.content-img{
+    background: linear-gradient(90deg, red 33%, blue);
+    color: brown;
+    display: flex;
+    position: relative;
+}
+
+.content-rie, .content-batman{
+    height: 100vh;
+    width: 50%;
+}
+
+.content-rie img, .content-batman img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    opacity: 0.6;
+    filter: grayscale(100%);
+}
+
+.content-rie img{
+    object-position: center top;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    padding: 3em;
+    
+}
+
+.title h1{
+    overflow: hidden;
+    color: white;
+    font-size: 30px;
+    transform: translateY(var(--titular-pos));
+}
+
+.p-column{
+    column-count: 2;
+    column-gap: 2em;
+    column-rule: 2px solid rgba(0, 0, 0, 0.089);
+}
+
+p, h2, h3{
+    margin: 30px 15vw 30px 15vw;
+    text-align: justify;
+}
+
+.batifamilia{
+    float: right;
+    clip-path: var(--poligono);
+    shape-outside: var(--poligono) border-box;
+    margin: 10px;
+    shape-margin: 1em;
+    transform: translateX(var(--img1-pos));
+}
+
+.batifamilia img{
+    object-fit: cover;
+    width: 15em;
+    height: 15em;
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.caballeros-oscuros{
+    min-width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.caballeros-oscuros img{
+    width: 100%;
+    transform: translateY(var(--img2-pos));  
+}

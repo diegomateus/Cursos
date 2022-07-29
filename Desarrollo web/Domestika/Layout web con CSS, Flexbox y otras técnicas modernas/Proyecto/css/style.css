@@ -3,7 +3,7 @@
 }
 
 .navegacion{
-    background: linear-gradient(black 33%, blue);
+    background: linear-gradient(black 33%, red);
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
 }
 
 .navegacion > ul > li{
-    margin: 5px;
+    margin: 5px 0px 5px 0px;
 }
 
 .navegacion > ul > li > a{
@@ -31,28 +31,43 @@
     display: flex;
     height: 100vh;
     position: relative;
-    width: 100vw;
 }
 
-.content-img > div{
-    width: 50vw;
+.content-img .content-batman, .content-img .content-rie{
+    width: 50%;
 }
 
 .content-img > div > img{
     object-fit: cover;
-    object-position: top center;
     opacity: 0.5;
     height: 100%;
     width: 100%;
 }
 
+.content-batman img{
+    object-position: center center;
+}
+
+.content-rie img{
+    object-position: top center;
+}
+
 .title{
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30vh;
+}
+
+.title h1{
     color: white;
+    font-size: 30px;
 }
 
 .p-column{
@@ -62,10 +77,42 @@
 }
 
 article, .p-column, body > p{
-    padding: 0px 30px 0px 30px;
     text-align: justify;
 }
 
 p{
     margin-bottom: 10px;
+}
+
+article > div > img{
+    object-fit: cover;
+    width: 100%
+}
+
+.batifamilia {
+    float: right;
+    max-width: 20em;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+    shape-margin: 5px;
+}
+
+.caballeros-oscuros{
+    float: left;
+    max-width: 20em;
+    shape-margin: 5px;
+    clip-path: polygon(0% 0%, 87% 0, 100% 50%, 85% 100%, 0% 100%);
+    shape-outside: polygon(0% 0%, 87% 0, 100% 50%, 85% 100%, 0% 100%);;
+}
+
+.contenedor-fichas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ficha{
+    width: 200px;
+    height: 300px;
+    background-color: red;
 }

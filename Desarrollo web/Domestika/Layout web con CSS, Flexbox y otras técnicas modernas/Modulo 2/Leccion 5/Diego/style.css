@@ -19,3 +19,9 @@
     background: var(--color);
   }
   
+  @media (max-width: 37.5em) {
+    :root{
+      --color: #E56ADA;
+    }
+    
+  }

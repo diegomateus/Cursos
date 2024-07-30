@@ -17,8 +17,8 @@
   .articulo__entradilla > p {
     margin-bottom: 0;
     column-count: 2;
-    column-gap: 20px;
-    column-rule: solid 3px black;
+    column-gap: 3em;
+    column-rule: solid 1px black;
   }
   
   .articulo__cuerpo {

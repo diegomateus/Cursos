@@ -38,10 +38,12 @@
   @media (max-width: 37.5em) {
     .imagen-circulo {
       margin: 1em;
+      shape-outside: unset;
     }
   
     .imagen-hexagono {
       margin: 1em;
+      shape-outside: unset;
     }
   }
   

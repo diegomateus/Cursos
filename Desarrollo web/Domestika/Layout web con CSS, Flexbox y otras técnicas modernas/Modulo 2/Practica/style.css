@@ -15,7 +15,14 @@
     width: 50%;
 }
 
-.content-rie img, .content-batman img{
+.content-rie img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.content-batman img{
     height: 100%;
     width: 100%;
     object-fit: cover;
